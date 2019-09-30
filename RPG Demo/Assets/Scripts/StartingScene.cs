@@ -167,6 +167,7 @@ public class StartingScene : MonoBehaviour
             if(GUI.Button(new Rect(885,660,150,80), "Next step"))
             {
                 RandomStats = false;
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
     }
